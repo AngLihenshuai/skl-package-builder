@@ -81,12 +81,56 @@ function nextPrev(n) {
   // if you have reached the end of the form... :
   if (currentTab >= x.length) {
     //...the form gets submitted:
-    document.getElementById("wizard").submit();
+    //document.getElementById("wizard").submit();
+    console.log("submit")
+    //form = document.getElementById('wizard');
+    size = document.querySelectorAll('input[name="filter.p.m.custom.including_ranges"]:checked');
+    power = document.querySelectorAll('input[name="filter.p.m.custom.oven_power"]:checked');
+    hood = document.querySelectorAll('input[name="filter.p.m.custom.hood_height"]:checked');
+    dispenser = document.querySelectorAll('input[name="filter.p.m.custom.water_dispenser"]:checked');
+    microwave = document.querySelectorAll('input[name="filter.p.m.custom.including_microwave"]:checked');
+    dishwasher = document.querySelectorAll('input[name="filter.p.m.custom.including_dishwasher"]:checked');
+    url = "https://www.smartkitchenlab.net/collections/packages?"
+    if (size.length > 0) {
+        url = url + "filter.p.m.custom.including_ranges=" + size[0].value + "&";
+    }
+    if (power.length > 0) {
+        url = url + "filter.p.m.custom.oven_power=" + power[0].value + "&";
+    }
+    if (hood.length > 0) {
+        url = url + "filter.p.m.custom.hood_height=" + hood[0].value + "&";
+    }
+    if (dispenser.length > 0) {
+        url = url + "filter.p.m.custom.water_dispenser=" + dispenser[0].value + "&";
+    }
+    if (microwave.length > 0) {
+        url = url + "filter.p.m.custom.including_microwave=" + microwave[0].value + "&";
+    }
+    if (dishwasher.length > 0) {
+        url = url + "filter.p.m.custom.including_dishwasher=" + dishwasher[0].value + "&";
+    }
+    if (url[url.length - 1] == "&") {
+      url = url.slice(0, -1)
+    }
+    window.open(url);  
+
     return false;
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
 }
+
+/*
+function logSubmit(event) {
+  console.log("Form Submitted!");
+  value = document.getElementById("opt_6").value;
+  console.log("The value in the text box is ="+ value);
+  const checked = document.querySelectorAll('input[name="filter.p.m.custom.oven_power"]:checked');
+  console.log([...checked].map(c => c.value))
+  console.log("###################!");
+  event.preventDefault();
+}
+*/
 
 function validateForm() {
   // This function deals with validation of the form fields
@@ -119,5 +163,3 @@ function fixStepIndicator(n) {
   //... and adds the "active" class to the current step:
   x[n].className += " active";
 }
-
-
