@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Smart Package Bundle</title>
+   <!-- FontAwesome-cdn include -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+   <!-- Google fonts include -->
+   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700;800&family=Lato&display=swap" rel="stylesheet">
+   <!-- Bootstrap-css include -->
+   <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+   <!-- Animate-css include -->
+   <link rel="stylesheet" href="./assets/css/animate.min.css">
+   <!-- Main-StyleSheet include -->
+   <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+   <div class="wrapper position-relative overflow-hidden">
+      <div class="container-md-fluid p-3 p-lg-0 me-5">
+         <div class="row">
+            <div class="col-xl-4">
+               <div class="form_logo position-absolute">
+                  <a href="index.html">
+                     <img src="assets/images/logo/logo.png" alt="image-not-found">
+                  </a>
+               </div>
+               <div class="steps_area step_area_fixed d-none d-xl-block">
+                  <div class="image_holder">
+                     <img class="overflow-hidden" src="assets/images/background/bg_0.png" alt="image-not-found">
+                  </div>
+                  <div class="step_items position-absolute">
+                     <div class="step d-block text-center bg-white position-relative current active">1</div>
+                     <div class="step d-block text-center bg-white position-relative">2
+                     </div>
+                     <div class="step d-block text-center bg-white position-relative">3
+                     </div>
+                     <div class="step d-block text-center bg-white position-relative">4
+                     </div>
+                     <div class="step d-block text-center bg-white position-relative">5</div>
+                     <div class="step d-block text-center bg-white position-relative last">6
+                     </div>
+                  </div>
+                  <!--div class="count_box d-flex flex-row mt-5 rounded-pill position-absolute">
+                     <div class="count_clock ps-3">
+                        <img src="./assets/images/clock/clock.png" alt="image-not-found">
+                     </div>
+                     <div class="count_title px-2">
+                        <h4 class="text-white pe-5">More Discount</h4>
+                        <span class="text-white">Choose your own bundle</span>
+                     </div>
+                     <div class="count_number p-3 d-flex justify-content-around align-items-center position-relative overflow-hidden bg-white rounded-pill countdown_timer" data-countdown="2022/10/24">
+                     </div>
+                  </div-->
+               </div>
+            </div>
+            <div class="col-xl-7 ps-5 pt-5">
+               <!--form class="multisteps_form" id="wizard" method="POST" action="../thankyou/index-3.html"-->
+               <form class="multisteps_form" id="wizard" method="GET" action="http://www.smartkitchenlab.net/collections/packages">
+                  <!-- ------------------ Step-1 ------------------- -->
+                  <div class="multisteps_form_panel" style="display: block;">
+                     <div class="step_content d-flex justify-content-between pt-5 pb-2">
+                        <h4>Bundle Size</h4>
+                        <!--span class="text-end text-uppercase">Bundle Size</span-->
+                     </div>
+                     <div class="step_progress_bar">
+                        <div class="progress rounded-pill">
+                           <div class="progress-bar" style="width:17%"></div>
+                        </div>
+                     </div>
+                     <div class="form_content">
+                        <div class="question_title py-5">
+                           <h1 class="text-capitalize">What Size of Range You Are Looking For:</h1>
+                        </div>
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 form_items">
+                           <!--div class="col">
+                              <label id="opt_1" class="step_1 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_25ms">
+                                 <div class="step_box_icon">
+                                    <img src="assets/images/item-img/item_0.png" alt="image-not-found">
+                                 </div>
+                                 <span class="step_box_text pt-2">
+                                    None
+                                 </span>
+                                 <p class="step_box_desc">
+                                    No need for a range
+                                 </p>
+                                 <input for="opt_1" type="radio" name="stp_1_select_option" value="None" checked="">
+                              </label>
+                           </div-->
+                           <div class="col">
+                              <label id="opt_2" class="step_1 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_50ms">
+                                 <div class="step_box_icon"><img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                 </div>
+                                 <span class="step_box_text pt-2">24 Inches</span>
+                                 <input for="opt_2" type="radio" name="filter.p.m.custom.including_ranges" value="24 inches">
+                              </label>
+                           </div>
+                           <div class="col">
+                              <label id="opt_3" class="step_1 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_100ms">
+                                 <div class="step_box_icon"><img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                 </div>
+                                 <span class="step_box_text pt-2">30 Inches</span>
+                                 <input for="opt_3" type="radio" name="filter.p.m.custom.including_ranges" value="30 inches">
+                              </label>
+                           </div>
+                           <div class="col">
+                              <label id="opt_4" class="step_1 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_150ms">
+                                 <div class="step_box_icon"><img src="assets/images/item-img/item_3.png" alt="image-not-found"></div>
+                                 <span class="step_box_text pt-2">36 Inches</span>
+                                 <input for="opt_4" type="radio" name="filter.p.m.custom.including_ranges" value="36 inches">
+                              </label>
+                           </div>
+                           <div class="col">
+                              <label id="opt_4" class="step_1 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_150ms">
+                                 <div class="step_box_icon"><img src="assets/images/item-img/item_3.png" alt="image-not-found"></div>
+                                 <span class="step_box_text pt-2">48 Inches</span>
+                                 <input for="opt_4" type="radio" name="filter.p.m.custom.including_ranges" value="48 inches">
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="form_btn pt-5 d-flex justify-content-between">
+                        <button type="button" class="prev_btn text-uppercase bg-white" id="prevBtn" onclick="nextPrev(-1)" style="display: none;"><span><i class="fas fa-arrow-left"></i></span> Last
+                           Question</button>
+                           <button type="button" class="next_btn text-uppercase text-white" id="nextBtn" onclick="nextPrev(1)">Next Question <span><i class="fas fa-arrow-right"></i></span></button>
+                     </div>
+                     </div>
+                     <!-- ------------------ Step-2 ------------------- -->
+                     <div class="multisteps_form_panel">
+                        <div class="step_content d-flex justify-content-between pt-5 pb-2">
+                           <h4>Oven Power Source</h4>                           
+                        </div>
+                        <div class="step_progress_bar">
+                           <div class="progress rounded-pill">
+                              <div class="progress-bar" style="width:34%"></div>
+                           </div>
+                        </div>
+                        <div class="form_content">
+                           <div class="question_title py-5">
+                              <h1 class="text-capitalize">Choose Your Oven Power Source</h1>
+                           </div>
+                           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 form_items">
+                              <!--div class="col">
+                                 <label id="opt_5" class="step_2 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_25ms">
+                                    <div class="step_box_icon">
+                                       <img src="assets/images/item-img/item_0.png" alt="image-not-found">
+                                    </div>
+                                    <span class="step_box_text pt-2">
+                                       Andaman islands
+                                    </span>
+                                    <p class="step_box_desc">
+                                       My horse likes to relax
+                                    </p>
+                                    <input for="opt_5" type="radio" name="stp_2_select_option" value="Andaman islands" checked="">
+                                 </label>
+                              </div-->
+                              <div class="col">
+                                 <label id="opt_6" class="step_2 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_50ms">
+                                    <div class="step_box_icon">
+                                       <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                    </div>
+                                    <span class="step_box_text pt-2">
+                                       Electricity
+                                    </span>
+                                    <p class="step_box_desc">
+                                       Electricity Oven
+                                    </p>
+                                    <input for="opt_6" type="radio" name="filter.p.m.custom.oven_power" value="Electricity">
+                                 </label>
+                              </div>
+                              <div class="col">
+                                 <label id="opt_7" class="step_2 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_100ms">
+                                    <div class="step_box_icon">
+                                       <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                    </div>
+                                    <span class="step_box_text pt-2">
+                                       Natural Gas
+                                    </span>
+                                    <p class="step_box_desc">
+                                       Natural Gas Oven
+                                    </p>
+                                    <input for="opt_7" type="radio" name="filter.p.m.custom.oven_power" value="Natural Gas">
+                                 </label>
+                              </div>
+                              <div class="col">
+                                 <label id="opt_8" class="step_2 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_150ms">
+                                    <div class="step_box_icon">
+                                       <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                    </div>
+                                    <span class="step_box_text pt-2">
+                                       Propane Gas
+                                    </span>
+                                    <p class="step_box_desc">
+                                       Propane Gas Oven
+                                    </p>
+                                    <input for="opt_8" type="radio" name="filter.p.m.custom.oven_power" value="Propane Gas">
+                                 </label>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="form_btn pt-5 d-flex justify-content-between">
+                           <button type="button" class="prev_btn text-uppercase bg-white" id="prevBtn" onclick="nextPrev(-1)"><span><i class="fas fa-arrow-left"></i></span> Last
+                              Question</button>
+                              <button type="button" class="next_btn text-uppercase text-white" id="nextBtn" onclick="nextPrev(1)">Next Question <span><i class="fas fa-arrow-right"></i></span></button>
+                           </div>
+                        </div>
+                        <!-- ------------------ Step-3 ------------------- -->
+                        <div class="multisteps_form_panel">
+                           <div class="step_content d-flex justify-content-between pt-5 pb-2">
+                              <h4>Hood Type</h4>                              
+                           </div>
+                           <div class="step_progress_bar">
+                              <div class="progress rounded-pill">
+                                 <div class="progress-bar" style="width:50%"></div>
+                              </div>
+                           </div>
+                           <div class="form_content">
+                              <div class="question_title py-5">
+                                 <h1 class="text-capitalize">Choose The Hood Type?</h1>
+                              </div>
+                              <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 form_items">
+                                 <div class="col">
+                                    <label id="opt_9" class="step_3 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_25ms">
+                                       <div class="step_box_icon">
+                                          <img src="assets/images/item-img/item_0.png" alt="image-not-found">
+                                       </div>
+                                       <span class="step_box_text pt-2">
+                                          Not Sure
+                                       </span>
+                                       <input for="opt_9" type="radio">
+                                    </label>
+                                 </div>
+                                 <div class="col">
+                                    <label id="opt_10" class="step_3 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_50ms">
+                                       <div class="step_box_icon">
+                                          <img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                       </div>
+                                       <span class="step_box_text pt-2">
+                                          11'' Under Cabinet
+                                       </span>
+                                       <p class="step_box_desc">
+                                          11 inches height Under Cabinet Hood
+                                       </p>
+                                       <input for="opt_10" type="radio" name="filter.p.m.custom.hood_height" value="11%27%27 Under Cabinet">
+                                    </label>
+                                 </div>
+                                 <div class="col">
+                                    <label id="opt_11" class="step_3 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_100ms">
+                                       <div class="step_box_icon">
+                                          <img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                       </div>
+                                       <span class="step_box_text pt-2">
+                                          16.5" Under Cabinet
+                                       </span>
+                                       <p class="step_box_desc">
+                                          16.5 inches height Under Cabinet Hood
+                                       </p>
+                                       <input for="opt_11" type="radio" name="filter.p.m.custom.hood_height" value='16.5" Under Cabinet'>
+                                    </label>
+                                 </div>
+                                 <div class="col">
+                                    <label id="opt_12" class="step_3 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_150ms">
+                                       <div class="step_box_icon">
+                                          <img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                       </div>
+                                       <span class="step_box_text pt-2">
+                                          45.3" Wall Mount
+                                       </span>
+                                       <p class="step_box_desc">
+                                          45.3 inches height Wall Mount Hood
+                                       </p>
+                                       <input for="opt_12" type="radio" name="filter.p.m.custom.hood_height" value='45.3" Wall Mount'>
+                                    </label>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="form_btn pt-5 d-flex justify-content-between">
+                              <button type="button" class="prev_btn text-uppercase bg-white" id="prevBtn" onclick="nextPrev(-1)"><span><i class="fas fa-arrow-left"></i></span> Last
+                                 Question</button>
+                                 <button type="button" class="next_btn text-uppercase text-white" id="nextBtn" onclick="nextPrev(1)">Next Question <span><i class="fas fa-arrow-right"></i></span></button>
+                              </div>
+                           </div>
+                           <!-- ------------------ Step-4 ------------------- -->
+                           <div class="multisteps_form_panel">
+                              <div class="step_content d-flex justify-content-between pt-5 pb-2">
+                                 <h4>Refrigerator</h4>
+                              </div>
+                              <div class="step_progress_bar">
+                                 <div class="progress rounded-pill">
+                                    <div class="progress-bar" style="width: 67%"></div>
+                                 </div>
+                              </div>
+                              <div class="form_content">
+                                 <div class="question_title py-5">
+                                    <h1 class="text-capitalize">Choose the Refrigerator</h1>
+                                 </div>
+                                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 form_items">
+                                    <div class="col">
+                                       <label id="opt_13" class="step_4 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_25ms">
+                                          <div class="step_box_icon">
+                                             <img src="assets/images/item-img/item_0.png" alt="image-not-found">
+                                          </div>
+                                          <span class="step_box_text pt-2">
+                                             Not Sure
+                                          </span>
+                                       </label>
+                                    </div>
+                                    <div class="col">
+                                       <label id="opt_14" class="step_4 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_50ms">
+                                          <div class="step_box_icon">
+                                             <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                          </div>
+                                          <span class="step_box_text pt-2">
+                                             Refrigerator Without Water Dispenser
+                                          </span>
+                                          <input for="opt_14" type="radio" name="filter.p.m.custom.water_dispenser" value="No Water Dispenser">
+                                       </label>
+                                    </div>
+                                    <div class="col">
+                                       <label id="opt_15" class="step_4 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_100ms">
+                                          <div class="step_box_icon">
+                                             <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                          </div>
+                                          <span class="step_box_text pt-2">
+                                             Refrigerator With Water Dispenser
+                                          </span>
+                                          <input for="opt_15" type="radio" name="filter.p.m.custom.water_dispenser" value="Water Dispenser">
+                                       </label>
+                                    </div>
+                                    <!--div class="col">
+                                       <label id="opt_16" class="step_4 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_150ms">
+                                          <div class="step_box_icon">
+                                             <img src="assets/images/item-img/item_3.png" alt="image-not-found">
+                                          </div>
+                                          <span class="step_box_text pt-2">in hot deserts</span>
+                                          <p class="step_box_desc">
+                                             My horse likes to relax
+                                          </p>
+                                          <input for="opt_16" type="radio" name="stp_4_select_option" value="in hot deserts">
+                                       </label>
+                                    </div-->
+                                 </div>
+                              </div>
+                              <div class="form_btn pt-5 d-flex justify-content-between">
+                                 <button type="button" class="prev_btn text-uppercase bg-white" id="prevBtn" onclick="nextPrev(-1)"><span><i class="fas fa-arrow-left"></i></span> Last
+                                    Question</button>
+                                    <button type="button" class="next_btn text-uppercase text-white" id="nextBtn" onclick="nextPrev(1)">Next Question <span><i class="fas fa-arrow-right"></i></span></button>
+                                 </div>
+                              </div>
+                           <!-- ------------------ Step-5 ------------------- -->
+                           <div class="multisteps_form_panel">
+                              <div class="step_content d-flex justify-content-between pt-5 pb-2">
+                                 <h4>Microwave</h4>
+                              </div>
+                              <div class="step_progress_bar">
+                                 <div class="progress rounded-pill">
+                                    <div class="progress-bar" style="width: 84%"></div>
+                                 </div>
+                              </div>
+                              <div class="form_content">
+                                 <div class="question_title py-5">
+                                    <h1 class="text-capitalize">Microwave</h1>
+                                 </div>
+                                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 form_items">
+                                    <div class="col">
+                                       <label id="opt_16" class="step_5 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_25ms">
+                                          <div class="step_box_icon">
+                                             <img src="assets/images/item-img/item_0.png" alt="image-not-found">
+                                          </div>
+                                          <span class="step_box_text pt-2">
+                                             Not Sure
+                                          </span>
+                                          <input for="opt_16" type="checkbox">
+                                       </label>
+                                    </div>
+                                    <div class="col">
+                                       <label id="opt_17" class="step_5 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_50ms">
+                                          <div class="step_box_icon">
+                                             <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                          </div>
+                                          <span class="step_box_text pt-2">
+                                             24 Inches
+                                          </span>
+                                          <input for="opt_17" type="checkbox" name="filter.p.m.custom.including_microwave" value="24 inches">
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form_btn pt-5 d-flex justify-content-between">
+                                 <button type="button" class="prev_btn text-uppercase bg-white" id="prevBtn" onclick="nextPrev(-1)"><span><i class="fas fa-arrow-left"></i></span> Last
+                                    Question</button>
+                                    <button type="button" class="next_btn text-uppercase text-white" id="nextBtn" onclick="nextPrev(1)">Next Question <span><i class="fas fa-arrow-right"></i></span></button>
+                                 </div>
+                              </div>
+                           <!-- ------------------ Step-6 ------------------- -->
+                           <div class="multisteps_form_panel">
+                              <div class="step_content d-flex justify-content-between pt-5 pb-2">
+                                 <h4>Dashwasher</h4>
+                              </div>
+                              <div class="step_progress_bar">
+                                 <div class="progress rounded-pill">
+                                    <div class="progress-bar" style="width: 100%"></div>
+                                 </div>
+                              </div>
+                              <div class="form_content">
+                                 <div class="question_title py-5">
+                                    <h1 class="text-capitalize">Dashwasher</h1>
+                                 </div>
+                                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 form_items">
+                                    <div class="col">
+                                       <label id="opt_18" class="step_6 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_25ms">
+                                          <div class="step_box_icon">
+                                             <img src="assets/images/item-img/item_0.png" alt="image-not-found">
+                                          </div>
+                                          <span class="step_box_text pt-2">
+                                             Not Sure
+                                          </span>
+                                          <input for="opt_16" type="checkbox">
+                                       </label>
+                                    </div>
+                                    <div class="col">
+                                       <label id="opt_19" class="step_6 d-flex flex-column bg-white text-center animate__animated animate__fadeInRight animate_50ms">
+                                          <div class="step_box_icon">
+                                             <img src="assets/images/item-img/item_1.png" alt="image-not-found">
+                                          </div>
+                                          <span class="step_box_text pt-2">
+                                             24 Inches
+                                          </span>
+                                          <input for="opt_17" type="checkbox" name="filter.p.m.custom.including_dishwasher" value="24 inches">
+                                       </label>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="form_btn pt-5 d-flex justify-content-between">
+                                 <button type="button" class="prev_btn text-uppercase bg-white" id="prevBtn" onclick="nextPrev(-1)"><span><i class="fas fa-arrow-left"></i></span> Last
+                                    Question</button>
+                                    <button type="button" class="next_btn text-uppercase text-white" id="nextBtn" onclick="nextPrev(1)">Next Question <span><i class="fas fa-arrow-right"></i></span></button>
+                                 </div>
+                              </div>
+                           </form>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- jQuery-js include -->
+               <script src="./assets/js/jquery-3.6.0.min.js"></script>
+               <!-- Countdown-js include -->
+               <script src="./assets/js/countdown.js"></script>
+               <!-- Bootstrap-js include -->
+               <script src="./assets/js/bootstrap.min.js"></script>
+               <!-- jQuery-validate-js include -->
+               <script src="./assets/js/jquery.validate.min.js"></script>
+               <!-- Custom-js include -->
+               <script src="./assets/js/script.js"></script>
+            </body>
+            </html>
